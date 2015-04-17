@@ -1,0 +1,38 @@
+<template name="layout">
+
+<body id="page">
+
+ 		<ul class="cb-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 03</span></li>
+            <li><span>Image 04</span></li>
+            <li><span>Image 05</span></li>
+            <li><span>Image 06</span></li>
+        </ul>
+
+        <nav class="fixed-nav-bar">
+  <!-- Fixed navigation bar content -->
+  			<ul id="navlist">
+				<li><a href="#">Home</a></li>
+								
+  			</ul>
+		</nav>
+
+        <div class="container">
+			        	
+		{{>yield}}
+
+
+        </div>
+
+<form method="get" action="/search" id="search">
+  <input name="q" type="text" size="40" placeholder="Search..." />
+</form>
+
+
+	
+</body>
+
+
+</template>
